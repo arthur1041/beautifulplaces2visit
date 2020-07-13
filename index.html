@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-sbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautifuPlaces2Visit</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Buscando...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">beautifulplaces2visit</a>
+            </header>
+            <h1><span>Viva a Beleza</span> Existente no Nosso Planeta</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sunt praesentium et accusantium harum consequuntur repudiandae cum libero? Impedit, nulla.</p>
+
+            <div class="form-container">
+                <form action="#">
+                    <div class="form-left">
+                        <label for="place">Pesquise uma local:</label>
+                        <input type="text" name="place" id="place">
+                        <p>Exemplo: "Chile"</p>
+                    </div>
+                    <input type="button" value="Ver destinos" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="belo">
+        <img src="images/redwood-national-park.jpg">
+        <div class="right-col">
+            <h2>Belo. Encantandor.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam est eveniet error necessitatibus eos expedita minus facilis rem officia!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam est eveniet error necessitatibus eos expedita minus facilis rem officia!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam est eveniet error necessitatibus eos expedita minus facilis rem officia!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam est eveniet error necessitatibus eos expedita minus facilis rem officia!
+            </p>
+        </div>
+        
+    </section>
+    <script>
+        const button = document.getElementById("cta-btn");
+        const overlay = document.getElementById("overlay");
+        button.addEventListener("click", function() {
+            overlay.style.display = "grid";
+            overlay.classList.add("animate-overlay");
+        })
+    </script>
+</body>
+
+</html>
